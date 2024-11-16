@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Correct</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="title">Auto Correct</div>
+
+        <!-- Dark mode button moved to top-right corner -->
+        <button class="dark-mode-btn" onclick="toggleDarkMode()">🌙</button>
+
+        <div class="main" contenteditable="true" id="textArea"></div>
+        
+        <div class="buttons">
+            <button class="action-btn copy-btn" onclick="copyText()">Copy Text</button>
+            <button class="action-btn find-replace-btn" onclick="findAndReplace()">Find & Replace</button>
+            <button class="action-btn save-file-btn" onclick="saveAsFile()">Save File</button>
+        </div>
+
+        <div class="data">
+            <div id="wordCount">Word Count: 0</div>
+            <div id="totalCorrections">Correction Count: 0</div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
